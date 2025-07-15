@@ -11,6 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: Platane/snk@v3
+      steps:
+  - uses: actions/checkout@v3
+    with:
+      persist-credentials: false
+      fetch-depth: 0
+
         with:
           github_user_name: Pedrao01
           outputs: |
